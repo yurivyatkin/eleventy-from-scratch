@@ -1,0 +1,20 @@
+{
+  "name": "eleventy-from-scratch",
+  "version": "1.0.0",
+  "description": "Here I am following the course [Learn Eleventy From Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/).",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurivyatkin/eleventy-from-scratch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurivyatkin/eleventy-from-scratch/issues"
+  },
+  "homepage": "https://github.com/yurivyatkin/eleventy-from-scratch#readme"
+}
