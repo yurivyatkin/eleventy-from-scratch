@@ -10,5 +10,3 @@ intro:
   image: '/images/bg/toast.jpg'
   imageAlt: 'Buttered toasted white bread'
 ---
-
-This is pretty _rad_, right?
