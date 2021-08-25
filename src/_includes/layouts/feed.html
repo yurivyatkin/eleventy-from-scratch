@@ -1,0 +1,14 @@
+<!-- prettier-ignore -->
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+{% set postListItems = pagination.items %}
+
+{% block content %}
+<article>
+  <!-- prettier-ignore -->
+  {% include "partials/page-header.html" %}
+	{% include "partials/post-list.html" %}
+</article>
+{% endblock %}
