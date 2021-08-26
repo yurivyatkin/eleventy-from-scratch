@@ -9,9 +9,7 @@
       <ol class="[ post-list ] [ flow ]">
         {% for item in postListItems %}
         <li class="[ post-list__item ] [ leading-tight measure-long ]">
-          <a href="{{ item.url }}" class="post-list__link"
-            >{{ item.data.title }}</a
-          >
+          <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
         </li>
         {% endfor %}
       </ol>
