@@ -4,12 +4,23 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
 module.exports = (config) => {
+  // Transforms
+  const htmlMinTransform = require('./src/transforms/html-min-transform.js');
+
+  // Create a helpful production flag
+  const isProduction = process.env.NODE_ENV === 'production';
+
   // Add filters
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
 
   // Add plugins
   config.addPlugin(rssPlugin);
+
+  // Only minify HTML if we are in production because it slows builds _right_ down
+  if (isProduction) {
+    config.addTransform('htmlmin', htmlMinTransform);
+  }
 
   // Returns work items, sorted by display order
   config.addCollection('work', (collection) => {
